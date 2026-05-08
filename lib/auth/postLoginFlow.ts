@@ -5,9 +5,11 @@ import type { User } from "@/redux/slices/auth.slice";
 export type SignupRole = "user" | "school" | "education-business";
 type SignupStatus = "signup" | "plan" | "account-setup" | "verification" | "payment" | "confirmation";
 
-const SUPER_ADMIN_URL = "https://scoova-super-admin.vercel.app/";
-const MAIN_APP_URL = process.env.NEXT_PUBLIC_MAIN_APP_URL ?? "http://localhost:3000";
-const PROVIDER_APP_URL = process.env.NEXT_PUBLIC_PROVIDER_APP_URL ?? "http://localhost:3001";
+const SUPER_ADMIN_URL = process.env.NEXT_PUBLIC_SUPER_ADMIN_URL ?? "https://scoova-v2-super-admin-final.vercel.app/login";
+
+const MAIN_APP_URL = process.env.NEXT_PUBLIC_MAIN_APP_URL ?? "https://scoova-v2-website-final.vercel.app";
+
+const PROVIDER_APP_URL = process.env.NEXT_PUBLIC_PROVIDER_APP_URL ?? "https://scoova-v2-school-final-fqi2.vercel.app";
 
 export type PostLoginDecision =
   | { type: "redirect-super-admin"; url: string }

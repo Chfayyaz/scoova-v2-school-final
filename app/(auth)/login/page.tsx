@@ -156,7 +156,6 @@ export default function LoginPage() {
     try {
       console.log("STATIC GOOGLE LOGIN");
       toast.success("Google sign in started (static demo)");
-      router.push("/signup/role-selection");
     } catch (error) {
       const message =
         error instanceof Error ? error.message : "Failed to start Google sign in. Please try again.";
@@ -172,7 +171,6 @@ export default function LoginPage() {
     try {
       console.log("STATIC APPLE LOGIN");
       toast.success("Apple sign in started (static demo)");
-      router.push("/signup/role-selection");
     } catch (error) {
       const message =
         error instanceof Error ? error.message : "Failed to start Apple sign in. Please try again.";
